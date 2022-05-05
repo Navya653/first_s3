@@ -17,5 +17,5 @@ def upload_image():
 
 @app.route("/download-file/<string:filename>",methods=["GET"])
 def getFileToDownload(filename):
-      client.download_file('myaws56',filename,"e:\\new-downloads\\"+filename)
-      return {"message ": "check the download folder"}, 200
+      client.download_file('myaws56',filename,"c:\\new-downloads\\"+filename)
+      return {"message ": "check the download folder"}, 200 
